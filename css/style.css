@@ -155,6 +155,66 @@ Ellipsis */
     transform: translate(1000px, -200px);
 }
 
+/* CSS animation bounce effect with ball */
+@keyframes sliding {
+    0% {
+        background-color: limegreen;
+        left: 0;
+        top: 0;
+    }
+
+    20% {
+        top: 200px;
+        background-color: magenta;
+    }
+
+    40% {
+        top: 0px;
+        background-color: limegreen;
+    }
+
+    60% {
+        top: 200px;
+        background-color: magenta;
+    }
+
+    80% {
+        top: 0px;
+        background-color: limegreen;
+    }
+
+    100% {
+        left: 900px;
+        top: 200px;
+        background-color: magenta;
+    }
+
+}
+
+.animation-bounce-ball {
+    border: 1px solid green;
+    margin: 10px 0;
+}
+
+.animation-bounce-ball h1 {
+    text-align: center;
+}
+
+.stage {
+    width: 900px;
+    height: 300px;
+}
+
+.ball-bounce {
+    width: 100px;
+    height: 100px;
+    background-color: limegreen;
+    border-radius: 50%;
+    animation: sliding 4s ease-in-out 0.5s infinite;
+    animation-play-state: running;
+    position: relative;
+}
+
 /* Login section */
 .login-section {
     display: flex;
