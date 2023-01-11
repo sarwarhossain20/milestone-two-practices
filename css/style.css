@@ -11,6 +11,149 @@ nav a {
 }
 
 /* end */
+/* CSS Overflow visible,
+Hidden,
+Scroll,
+Text-overflow,
+Ellipsis */
+.overflow-ellipsis {
+    border: 1px solid green;
+    margin-bottom: 20px;
+}
+
+.overflow-ellipsis h1 {
+    text-align: center;
+}
+
+.overflow-texts {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.short-text {
+    width: 200px;
+    border: 1px solid rebeccapurple;
+    overflow: hidden;
+
+}
+
+.short-text-ellips {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.overflow-scroll {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rebeccapurple;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.overflow-others {
+    width: 500px;
+    height: 300px;
+    border: 1px solid rebeccapurple;
+    overflow-y: scroll;
+}
+
+/* end */
+/* Transform Element using rotate scale translate */
+.transform-rotate-translate {
+    border: 1px solid green;
+}
+
+.transform-rotate-translate h1 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.box,
+.inner {
+    width: 150px;
+    height: 150px;
+    border: 1px solid purple;
+}
+
+.box {
+    background-color: antiquewhite;
+}
+
+.inner {
+    background-color: palevioletred;
+    transform: scale(0.60) rotate(45deg) translateY(50px);
+}
+
+/* CSS animation transition */
+.animation-transition {
+    border: 1px solid green;
+    margin: 20px 0;
+}
+
+.animation-transition h1 {
+    text-align: center;
+}
+
+.amination-boxes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.box-animation {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    border: 1px solid purple;
+    background-color: coral;
+    transition: width 3s ease 1s, height 3s ease 1s, transform 1s;
+}
+
+.box-animation:hover {
+    width: 400px;
+    height: 400px;
+    transform: rotate(180deg);
+}
+
+/* end */
+.cricket-animation {
+    border: 1px solid green;
+}
+
+.cricket-animation h1 {
+    text-align: center;
+}
+
+.field {
+    border: 1px solid;
+    padding-bottom: 150px;
+}
+
+.field:hover .bat {
+    transform: rotate(-60deg);
+    transform-origin: top right;
+}
+
+.ball {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: red;
+    position: relative;
+    left: 512px;
+    transition: transform 1s ease-out 0.1s;
+}
+
+.field:hover .ball {
+    transform: translate(1000px, -200px);
+}
 
 /* Login section */
 .login-section {
