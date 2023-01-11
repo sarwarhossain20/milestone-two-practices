@@ -1,0 +1,151 @@
+/* nav section */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+}
+
+/* end */
+
+/* Login section */
+.login-section {
+    display: flex;
+    justify-content: center;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.login-container h2 {
+    text-align: center
+}
+
+.login-container input {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    margin-top: 1rem;
+}
+
+.login-container input[type="submit"] {
+    background-color: rgb(245, 102, 102);
+    border: 0;
+    border-radius: 5px;
+    color: #fff;
+
+}
+
+/* my calender */
+.title {
+    text-align: center;
+}
+
+.calender-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 20px;
+    column-gap: 10px;
+    grid-template-rows: 30px repeat(5, 75px);
+
+}
+
+.date,
+.other-date,
+.day {
+    background-color: rgb(181, 234, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.other-date {
+    background-color: lightgray;
+}
+
+.day {
+    font-size: 1em;
+    background-color: antiquewhite;
+}
+
+/* end */
+/* Responsive Website */
+.food-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.food {
+    border: 2px solid brown;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.food img {
+    width: 75%;
+}
+
+/* media query */
+
+@media screen and (max-width: 576px) {
+    .food-container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+}
+
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .food-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+/* my responsive website */
+body {
+    border: 1px solid plum;
+    max-width: 980px;
+    margin: 0 auto;
+}
+
+.title-tiger {
+    font-size: 4vw;
+    text-align: center;
+}
+
+.tiger img {
+    width: 100%;
+}
+
+.part-two {
+    display: flex;
+}
+
+.part-two .split {
+    width: 50%;
+}
+
+.split img {
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    .part-two {
+        flex-direction: column-reverse;
+    }
+
+    .part-two .split {
+        width: 100%;
+    }
+}
